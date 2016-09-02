@@ -1,0 +1,25 @@
+memory, 32,M
+
+geomtyp=xyz
+geometry={
+4
+nitrate anion geometry taken from hydronium
+ N   -0.0000348200   -0.0000015400   -0.0823037200
+ O    0.4651268700    0.8117667800    0.2194445200
+ O    0.4707170800   -0.8085316900    0.2194487400
+ O   -0.9355654200   -0.0032228000    0.2195364800
+}
+
+basis
+default=avdz
+end
+
+CHARGE = -1, SPIN = 0
+hf
+mp2
+
+e_H2O_b3lyp_avqz = energy
+optg;coord,3n
+{frequencies
+thermo,sym=c2v
+print,thermo}

@@ -1,0 +1,82 @@
+               SPARTAN STUDENT 
+        build 6.115p1.1.2 (Feb 26 2014)
+
+ Wavefunction Developers: 
+    B.J. Deppmeier, A.J. Driessen, T.S. Hehre, W.J. Hehre, 
+    J.A. Johnson, P.E. Klunzinger, J.M. Leonard, I.N. Pham 
+    W.J. Pietro, Jianguo Yu 
+ 
+ Q-Chem Developers:  
+ Y. Shao, L. Fusti-Molnar, Y. Jung, J. Kussmann, C. Ochsenfeld,
+ S. T. Brown, A. T. B. Gilbert, L. V. Slipchenko,S. V. Levchenko,
+ D. P. O'Neill, R. A. DiStasio Jr., R. C. Lochan, T. Wang,
+ G. J. O. Beran, N. A. Besley, J. M., Herbert, C. Y. Lin,
+ T. Van Voorhis, S. H. Chien, A. Sodt, R. P. Steele, 
+ V. A. Rassolov, P. E. Maslen, P. P. Korambath, R. D. Adamson,
+ B. Austin, J. Baker, E. F. C. Byrd, H. Dachsel, R. J. Doerksen,
+ A. Dreuw, B. D. Dunietz, A. D. Dutoi, T. R. Furlani,
+ S. R. Gwaltney, A. Heyden, S. Hirata, C.-P. Hsu, G. Kedziora,
+ R. Z. Khalliulin, P. Klunzinger, A. M. Lee, M. S. Lee, W. Liang,
+ I. Lotan, N. Nair, B. Peters, E. I. Proynov, P. A. Pieniazek, 
+ Y. M. Rhee, J. Ritchie, E. Rosta, C. D. Sherrill, 
+ A. C. Simmonett, J. E. Subotnik, H. L. Woodcock III,
+ W. Zhang, A. T. Bell, A. K. Chakraborty, D. M. Chipman,
+ F. J. Keil, A. Warshel, W. J. Hehre, H. F. Schaefer III,
+ J. Kong, A. I. Krylov, P. M. W. Gill, M. Head-Gordon,
+ 
+ Wavefunction Inc.           Sales:   sales@wavefun.com  
+ Irvine CA                   Support: support@wavefun.com  
+                             Web:     www.wavefun.com   
+ 
+Copyright © 1995 - 2013 
+----------------------------------------------------
+
+Job run on "Shelby-Straights-MacBook-Pro.local" (MacBookPro11,3 (quad processor))
+
+           Spartan Quantum Mechanics Module    6.115
+
+     Scratch files written to /tmp/qcscratch_shelbystraight_40104//
+
+ MAC (Gx) OSX Version
+
+ Q-chem begins on Sat Aug 13 14:36:45 2016  
+
+Setting default student values
+  ... MEM_TOTAL 800 # MB 
+
+Processing $rem in /Applications/Spartan Student.app/Contents/SharedSupport/P4e//../auxdir/config/preferences.
+   (Site specific preferences)
+  ... THRESH             9
+  ... SCF_CONVERGENCE    7
+  ... SMALL_PROD_XCMAT   9
+  ... BASIS_LIN_DEP_THRESH     5
+  ... SCF_ALGORITHM	DIIS_GDM
+  ... MAXSCF		100
+  ... MAXDIIS          50
+  ... THRESHDIIS	 -1  (i.e. don't switch on delta-E)
+  ... ONEEXE_SPAR     TRUE
+  ... GUI              GUI_SPARTAN
+  ... TERSE_OUTPUT     TRUE
+Processing $rem in input file
+  ... JOBTYPE    FREQ
+  ... EXCHANGE     	HF
+  ... CORRELATION  	MP2
+  ... BASIS        	6-31G(d)
+  ... N_FROZEN_CORE 	4
+  ... VARTHRESH    	2    (default DFT)
+  ... INCDFT       	TRUE (default DFT)
+  ... GUI          	 GUI_SPARTAN
+  ... TERSE_OUTPUT 	 TRUE
+
+theFileMan(): MAXOPENFILES=206 MAX_SUB_FILE_NUM=16
+Maximum size of a physical file is 2.0 GB, maximum size of a tmp-file is 32.0 GB
+
+
+ Warning: !!Desired Analytical derivatives not available.
+
+ 2-order derivative to be evaluated numerically with 1-order analytical derivatives
+
+ Fatal error:
+
+ Cn slipped through
+

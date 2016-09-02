@@ -1,0 +1,24 @@
+memory, 32,M
+
+geomtyp=xyz
+geometry={
+3
+linear triatomic CO2
+ O   1.000000   0.0000000   0.000
+ O  -1.000000   0.0000000   0.000
+ C   0.000000   0.0000000   0.000
+}
+
+basis
+default=avdz
+end
+
+CHARGE = 0, SPIN = 0
+hf
+mp2
+
+e_H2O_b3lyp_avqz = energy
+optg;coord,3n
+{frequencies
+thermo,sym=c2v
+print,thermo}

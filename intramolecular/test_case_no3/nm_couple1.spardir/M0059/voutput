@@ -1,0 +1,264 @@
+               SPARTAN STUDENT 
+        build 6.115p1.1.2 (Feb 26 2014)
+
+ Wavefunction Developers: 
+    B.J. Deppmeier, A.J. Driessen, T.S. Hehre, W.J. Hehre, 
+    J.A. Johnson, P.E. Klunzinger, J.M. Leonard, I.N. Pham 
+    W.J. Pietro, Jianguo Yu 
+ 
+ Q-Chem Developers:  
+ Y. Shao, L. Fusti-Molnar, Y. Jung, J. Kussmann, C. Ochsenfeld,
+ S. T. Brown, A. T. B. Gilbert, L. V. Slipchenko,S. V. Levchenko,
+ D. P. O'Neill, R. A. DiStasio Jr., R. C. Lochan, T. Wang,
+ G. J. O. Beran, N. A. Besley, J. M., Herbert, C. Y. Lin,
+ T. Van Voorhis, S. H. Chien, A. Sodt, R. P. Steele, 
+ V. A. Rassolov, P. E. Maslen, P. P. Korambath, R. D. Adamson,
+ B. Austin, J. Baker, E. F. C. Byrd, H. Dachsel, R. J. Doerksen,
+ A. Dreuw, B. D. Dunietz, A. D. Dutoi, T. R. Furlani,
+ S. R. Gwaltney, A. Heyden, S. Hirata, C.-P. Hsu, G. Kedziora,
+ R. Z. Khalliulin, P. Klunzinger, A. M. Lee, M. S. Lee, W. Liang,
+ I. Lotan, N. Nair, B. Peters, E. I. Proynov, P. A. Pieniazek, 
+ Y. M. Rhee, J. Ritchie, E. Rosta, C. D. Sherrill, 
+ A. C. Simmonett, J. E. Subotnik, H. L. Woodcock III,
+ W. Zhang, A. T. Bell, A. K. Chakraborty, D. M. Chipman,
+ F. J. Keil, A. Warshel, W. J. Hehre, H. F. Schaefer III,
+ J. Kong, A. I. Krylov, P. M. W. Gill, M. Head-Gordon,
+ 
+ Wavefunction Inc.           Sales:   sales@wavefun.com  
+ Irvine CA                   Support: support@wavefun.com  
+                             Web:     www.wavefun.com   
+ 
+Copyright © 1995 - 2013 
+----------------------------------------------------
+
+Job run on "Shelby-Straights-MacBook-Pro.local" (MacBookPro11,3 (quad processor))
+
+           Spartan Quantum Mechanics Module    6.115
+
+     Scratch files written to /tmp/qcscratch_shelbystraight_40455//
+
+ MAC (Gx) OSX Version
+
+ Q-chem begins on Sat Aug 13 14:50:31 2016  
+
+Setting default student values
+  ... MEM_TOTAL 800 # MB 
+
+Processing $rem in /Applications/Spartan Student.app/Contents/SharedSupport/P4e//../auxdir/config/preferences.
+   (Site specific preferences)
+  ... THRESH             9
+  ... SCF_CONVERGENCE    7
+  ... SMALL_PROD_XCMAT   9
+  ... BASIS_LIN_DEP_THRESH     5
+  ... SCF_ALGORITHM	DIIS_GDM
+  ... MAXSCF		100
+  ... MAXDIIS          50
+  ... THRESHDIIS	 -1  (i.e. don't switch on delta-E)
+  ... ONEEXE_SPAR     TRUE
+  ... GUI              GUI_SPARTAN
+  ... TERSE_OUTPUT     TRUE
+Processing $rem in input file
+  ... JOBTYPE    FREQ
+  ... EXCHANGE     	HF
+  ... CORRELATION  	MP2
+  ... BASIS        	6-31G(d)
+  ... N_FROZEN_CORE 	4
+  ... VARTHRESH    	2    (default DFT)
+  ... INCDFT       	TRUE (default DFT)
+  ... GUI          	 GUI_SPARTAN
+  ... TERSE_OUTPUT 	 TRUE
+ Writing REM_CC_EA            0
+ ----------------------------------------------------
+       Standard Nuclear Orientation (Angstroms)
+    I     Atom         X            Y            Z
+ ----------------------------------------------------
+    1      N       0.595389     0.005268     0.000009
+    2      O       0.519596     0.992746    -0.000004
+    3      O       0.522067    -0.996341    -0.000004
+    4      O      -1.562627    -0.001015     0.000000
+ ----------------------------------------------------
+ Molecular Point Group                 C1    NOp =  1
+ Largest Abelian Subgroup              C1    NOp =  1
+ Nuclear Repulsion Energy =   119.5269591071 hartrees
+ There are       16 alpha and       16 beta electrons
+
+theFileMan(): MAXOPENFILES=206 MAX_SUB_FILE_NUM=16
+Maximum size of a physical file is 2.0 GB, maximum size of a tmp-file is 32.0 GB
+
+
+ Warning: !!Desired Analytical derivatives not available.
+
+ 2-order derivative to be evaluated numerically with 1-order analytical derivatives
+ Requested basis set is 6-31G(d)
+ There are 16 shells and 60 basis functions
+
+Total Memory Limit    800 MB
+Mega-Array Size       142 MB
+MEM_STATIC part       140 MB
+
+ SPARTAN STUDENT Quantum Mechanics Program:  (x86/Darwin)    build  6.115 (3.1.Pw)
+
+-------------------------------------------------
+-  Entering fldman on Sat Aug 13 14:50:31 2016  -
+-------------------------------------------------
+
+
+                       Distance Matrix (Angstroms)
+             N (  1)   O (  2)   O (  3)
+   O (  2)  0.990382
+   O (  3)  1.004290  1.989089
+   O (  4)  2.158025  2.307209  2.310114
+ 
+
+-------------------------------------------------
+-  Entering gesman on Sat Aug 13 14:50:31 2016  -
+-------------------------------------------------
+
+ A cutoff of  1.0D-09 yielded    132 shell pairs
+ There are   1934 function pairs
+Evaluating contribution to one-electron hamiltonian from nuclear
+ Smallest overlap matrix eigenvalue = 6.67E-04
+ Multipole matrices computed through 2nd order
+ Guess from superposition of atomic densities
+ Warning:  Energy on first SCF cycle will be non-variational
+ ..early memory check for frequency jobs..
+
+-------------------------------------------------
+-  Entering scfman on Sat Aug 13 14:50:31 2016  -
+-------------------------------------------------
+
+ A restricted Hartree-Fock SCF calculation will be
+ performed using Pulay DIIS + Geometric Direct Minimization
+ SCF converges when RMS gradient is below 1.0E-07
+ ---------------------------------------
+  Cycle       Energy         DIIS Error
+ ---------------------------------------
+    1    -280.4867425005      1.53E-01
+    2    -277.8898675473      3.42E-02
+    3    -272.3866823460      9.47E-02
+    4    -278.2272186671      1.40E-02
+    5    -278.2924246170      7.01E-03
+    6    -278.3121109606      2.02E-03
+    7    -278.3158925446      6.38E-04
+    8    -278.3176181353      5.42E-04
+    9    -278.3191718063      6.45E-04
+ VarThresh incresed to 3 to improve convergence.
+   10    -278.3196916964      6.71E-04
+ VarThresh incresed to 4 to improve convergence.
+   11    -278.3187488805      6.71E-04
+   12    -278.3125604393      2.10E-03
+ VarThresh incresed to 5 to improve convergence.
+   13    -278.3123341641      2.17E-03
+ VarThresh incresed to 6 to improve convergence.
+   14    -278.3130370050      1.98E-03
+ VarThresh incresed to 7 to improve convergence.
+   15    -278.3125412708      1.89E-03
+   16    -278.3135682683      9.27E-04
+   17    -278.3133811692      9.55E-04
+ VarThresh incresed to 8 to improve convergence.
+   18    -278.3139064263      5.99E-04
+   19    -278.3144703048      4.52E-04
+   20    -278.3145104443      1.46E-04
+   21    -278.3143653204      2.07E-04
+ VarThresh incresed to 9 to improve convergence.
+   22    -278.3143559533      1.98E-04
+ VarThresh incresed to 10 to improve convergence.
+   23    -278.3143612380      8.72E-05
+   24    -278.3143755425      1.15E-04
+ VarThresh incresed to 11 to improve convergence.
+   25    -278.3143834663      5.86E-05
+ VarThresh incresed to 12 to improve convergence.
+   26    -278.3144079710      6.27E-05
+ VarThresh incresed to 13 to improve convergence.
+   27    -278.3143763278      8.37E-05
+   28    -278.3143194984      6.02E-05
+ VarThresh incresed to 14 to improve convergence.
+   29    -278.3142673573      8.78E-05
+   30    -278.3142668620      9.43E-05
+ VarThresh incresed to 15 to improve convergence.
+   31    -278.3142714538      8.38E-05
+ VarThresh incresed to 16 to improve convergence.
+   32    -278.3142677710      4.81E-05
+   33    -278.3142251572      1.52E-04
+ VarThresh incresed to 17 to improve convergence.
+   34    -278.3141881634      1.95E-04
+   35    -278.3141911799      2.38E-04
+ VarThresh incresed to 18 to improve convergence.
+   36    -278.3141770290      2.89E-04
+ VarThresh incresed to 19 to improve convergence.
+   37    -278.3141995159      2.47E-04
+ VarThresh incresed to 20 to improve convergence.
+   38    -278.3142209113      2.78E-04
+ VarThresh incresed to 21 to improve convergence.
+   39    -278.3141917732      3.05E-04
+ VarThresh incresed to 22 to improve convergence.
+   40    -278.3142015481      2.55E-04
+   41    -278.3141468656      3.11E-04
+ VarThresh incresed to 23 to improve convergence.
+   42    -278.3141687618      2.67E-04
+   43    -278.3142503623      7.19E-05
+ VarThresh incresed to 24 to improve convergence.
+   44    -278.3141826668      2.07E-04
+   45    -278.3142262040      1.52E-05
+   46    -278.3142178920      5.60E-05
+ VarThresh incresed to 25 to improve convergence.
+   47    -278.3142173697      7.46E-05
+ VarThresh incresed to 26 to improve convergence.
+   48    -278.3142143935      1.21E-05
+   49    -278.3142129045      2.08E-05
+   50    -278.3142123985      1.99E-05 Done DIIS. Switching to GDM (a)
+   51    -278.3142121961      1.63E-04 Normal BFGS step
+   52    -278.3142122884      1.64E-04 Normal BFGS step
+   53    -278.3142127042      5.79E-04 Line search: understep
+   54    -278.3142179811      4.27E-03 Line search: understep
+   55    -278.3137703497      5.32E-02 Line search: overstep
+   56    -278.3142233829      7.89E-03 Line search: understep
+   57    -278.3139012703      4.77E-02 Line search: overstep
+   58    -278.3142264634      4.81E-03 Dog-leg BFGS step
+   59    -278.3145250263      9.18E-03 Line search: understep
+   60    -278.2692461512      2.20E-01 Line search: overstep
+   61    -278.3149071231      1.25E-02 Line search: understep
+   62    -278.2833901282      1.87E-01 Line search: overstep
+   63    -278.3151878936      1.84E-02 Line search: understep
+   64    -278.2923907747      1.62E-01 Line search: overstep
+   65    -278.3153034923      1.98E-02 Descent step
+   66    -278.3153851682      7.86E-03 Line search: understep
+   67    -278.3159188663      1.14E-02 Descent step
+   68    -278.3159656359      2.38E-03 Line search: understep
+   69    -278.3163176987      7.89E-03 Descent step
+   70    -278.3163557181      3.13E-03 Line search: understep
+   71    -278.3166788811      7.27E-03 Descent step
+   72    -278.3167144398      2.66E-03 Line search: understep
+   73    -278.3170268727      3.24E-03 Line search: understep
+   74    -278.3188214911      9.34E-03 Descent step
+   75    -278.3188636404      5.21E-03 Line search: understep
+   76    -278.3191901988      9.88E-03 Descent step
+   77    -278.3192263169      5.48E-03 Line search: understep
+   78    -278.3195498320      5.75E-03 Line search: understep
+   79    -278.3215711281      1.70E-02 Descent step
+   80    -278.3216787504      3.05E-02 Line search: understep
+   81    -278.3224431959      1.29E-02 Descent step
+   82    -278.3225146297      1.27E-02 Line search: understep
+   83    -278.3230782496      1.27E-02 Descent step
+   84    -278.3231389254      7.05E-03 Line search: understep
+   85    -278.3236669145      7.15E-03 Line search: understep
+   86    -278.3262417792      1.32E-02 Descent step
+   87    -278.3263200297      1.15E-02 Line search: understep
+   88    -278.3268771214      8.85E-03 Descent step
+   89    -278.3269323549      5.42E-03 Line search: understep
+   90    -278.3273823661      8.90E-03 Descent step
+   91    -278.3274283476      5.32E-03 Line search: understep
+   92    -278.3278097975      8.68E-03 Descent step
+   93    -278.3278494158      5.34E-03 Line search: understep
+   94    -278.3281850360      8.54E-03 Descent step
+   95    -278.3282205373      5.27E-03 Line search: understep
+   96    -278.3285260045      5.28E-03 Line search: understep
+   97    -278.3296283069      1.68E-02 Descent step
+   98    -278.3296914866      2.26E-02 Line search: understep
+   99    -278.3300283262      6.26E-03 Descent step
+  100    -278.3300622264      3.95E-03    Convergence failure
+
+ Fatal error occurred:
+
+ SCF failed to converge
+

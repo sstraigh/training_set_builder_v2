@@ -1,0 +1,54 @@
+# Verbose Mode: 1 
+# version : SPARTAN STUDENT 6.115  6.115 x86/Darwin
+# rootKeys: 'SOPT' 'MP2' '6-31G*' '' ''
+# Task    :  SOPT 'Single Point Energy'
+# Method  :   MP2 'Moller Plesset'
+# Basis   : 6-31G*
+# PreStep :   (2)
+# PreStep :   (1)
+# new Keys: ' SOPT MP2 6-31G* FREQ '
+# old Keys: ''
+#         : 'Base Keywords Differ'
+# new Prop: '  PRINTFREQ '
+# old Prop: ''
+# hessian : '' (0)
+# wavefn  : '' (0)
+# charge/m:  (-1 1) (0 0)
+# IRS     :  -99  [0 0 n=-1]
+# product#:  0x40000000 (0,0,0)
+# HF ver. :  4 [QC]
+# Graphic :  0
+# graphinf:  ''
+# graphopt:  ''
+# Atoms   :  4 (0,4,0,0)   62.0
+# Avail RAM: 480.00 Mb
+# Method  :  MP2 (5)
+# ..Local?:  1 0
+# ..Dense?:  1 0
+# Localize Button : 'YES'
+# Density  Button : 'POSSIBLE'
+# UV  Button : 'NOT POSSIBLE'
+# NMR Button : 'NOT POSSIBLE'
+# ECP Button : 'POSSIBLE'
+# RAMAN      : 'NOT POSSIBLE'
+# QSAR2      : 'POSSIBLE'
+RunInitializeJob
+  SOPT MP2 6-31G* FREQ  
+EndStep
+CopyArchiveToPreviousArchive
+RunQChem
+  SOPT MP2 6-31G* FREQ 
+EndStep
+CopyArchiveToPreviousArchive
+RunSemiempirical
+  AM1 ONLYPROPIN
+EndStep
+RunProperty
+ SOPT MP2 6-31G* FREQ  
+EndStep
+CopyArchiveToPreviousArchive
+RunPruneArchive
+ SOPT MP2 6-31G* FREQ  
+EndStep
+# Molecule Mode: 'Pending' [3]
+# --------- (3) 

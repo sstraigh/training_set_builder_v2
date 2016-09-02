@@ -1,0 +1,155 @@
+SPARTAN STUDENT Quantum Mechanics Program:  (x86/Darwin)    build  6.115
+
+ WARNING: Desired Analytical derivatives not available.
+
+
+Job type: Frequency calculation.
+Method: RMP2(FC)
+Basis set: 6-31G(D)
+Number of shells: 16
+Number of basis functions: 60
+Charge :     -1 
+Multiplicity: 1
+
+SCF model:
+ A restricted Hartree-Fock SCF calculation will be
+ performed using Pulay DIIS + Geometric Direct Minimization
+
+ SCF total energy:    -278.8855182 hartrees
+
+Correlation model:
+ An MP2 calculation will be performed
+ MP2 total energy:    -279.6013937 hartrees
+ SCF total energy:    -278.8853163 hartrees
+ MP2 total energy:    -278.8853163 hartrees
+ MP2 total energy:    -279.6011434 hartrees
+ SCF total energy:    -278.8857181 hartrees
+ MP2 total energy:    -278.8857181 hartrees
+ MP2 total energy:    -279.6016420 hartrees
+ SCF total energy:    -278.8852277 hartrees
+ MP2 total energy:    -278.8852277 hartrees
+ MP2 total energy:    -279.6010398 hartrees
+ SCF total energy:    -278.8858042 hartrees
+ MP2 total energy:    -278.8858042 hartrees
+ MP2 total energy:    -279.6017425 hartrees
+ SCF total energy:    -278.8855176 hartrees
+ MP2 total energy:    -278.8855176 hartrees
+ MP2 total energy:    -279.6013933 hartrees
+ SCF total energy:    -278.8855176 hartrees
+ MP2 total energy:    -278.8855176 hartrees
+ MP2 total energy:    -279.6013933 hartrees
+ SCF total energy:    -278.8855778 hartrees
+ MP2 total energy:    -278.8855778 hartrees
+ MP2 total energy:    -279.6014924 hartrees
+ SCF total energy:    -278.8854579 hartrees
+ MP2 total energy:    -278.8854579 hartrees
+ MP2 total energy:    -279.6012946 hartrees
+ SCF total energy:    -278.8856194 hartrees
+ MP2 total energy:    -278.8856194 hartrees
+ MP2 total energy:    -279.6016675 hartrees
+ SCF total energy:    -278.8854134 hartrees
+ MP2 total energy:    -278.8854134 hartrees
+ MP2 total energy:    -279.6011160 hartrees
+ SCF total energy:    -278.8855182 hartrees
+ MP2 total energy:    -278.8855182 hartrees
+ MP2 total energy:    -279.6013937 hartrees
+ SCF total energy:    -278.8855182 hartrees
+ MP2 total energy:    -278.8855182 hartrees
+ MP2 total energy:    -279.6013938 hartrees
+ SCF total energy:    -278.8856928 hartrees
+ MP2 total energy:    -278.8856928 hartrees
+ MP2 total energy:    -279.6015163 hartrees
+ SCF total energy:    -278.8853431 hartrees
+ MP2 total energy:    -278.8853431 hartrees
+ MP2 total energy:    -279.6012701 hartrees
+ SCF total energy:    -278.8855832 hartrees
+ MP2 total energy:    -278.8855832 hartrees
+ MP2 total energy:    -279.6014409 hartrees
+ SCF total energy:    -278.8854527 hartrees
+ MP2 total energy:    -278.8854527 hartrees
+ MP2 total energy:    -279.6013462 hartrees
+ SCF total energy:    -278.8855181 hartrees
+ MP2 total energy:    -278.8855181 hartrees
+ MP2 total energy:    -279.6013936 hartrees
+ SCF total energy:    -278.8855181 hartrees
+ MP2 total energy:    -278.8855181 hartrees
+ MP2 total energy:    -279.6013937 hartrees
+ SCF total energy:    -278.8854838 hartrees
+ MP2 total energy:    -278.8854838 hartrees
+ MP2 total energy:    -279.6014205 hartrees
+ SCF total energy:    -278.8855516 hartrees
+ MP2 total energy:    -278.8855516 hartrees
+ MP2 total energy:    -279.6013658 hartrees
+ SCF total energy:    -278.8856377 hartrees
+ MP2 total energy:    -278.8856377 hartrees
+ MP2 total energy:    -279.6014210 hartrees
+ SCF total energy:    -278.8853976 hartrees
+ MP2 total energy:    -278.8853976 hartrees
+ MP2 total energy:    -279.6013650 hartrees
+ SCF total energy:    -278.8855181 hartrees
+ MP2 total energy:    -278.8855181 hartrees
+ MP2 total energy:    -279.6013937 hartrees
+ SCF total energy:    -278.8855181 hartrees
+ MP2 total energy:    -278.8855181 hartrees
+ MP2 total energy:    -279.6013937 hartrees
+
+  Reason for exit: Successful completion 
+  Quantum Calculation CPU Time :      2:11.62
+  Quantum Calculation Wall Time:      2:30.83
+
+
+
+SPARTAN STUDENT Semi-Empirical Program:  (x86/Darwin)       build  6.115       
+    Semi-empirical Property Calculation 
+
+  MOLECULE43                                                                 
+
+  Guess from Archive
+    
+  Energy Due to Solvation
+   Solvation Energy               -246.404
+  Memory Used:          87.97 Kb
+   
+
+  Reason for exit: Successful completion 
+  Semi-Empirical Program CPU Time :          .04
+  Semi-Empirical Program Wall Time:         1.90
+
+
+
+SPARTAN STUDENT Properties Program:  (x86/Darwin)                 build  6.115 
+   All calculations using Post-HF corrected density matrix
+  
+   
+   
+
+  Standard Thermodynamic quantities at 298.15 K and 1.00 atm
+
+             Term      ZPE     Enthalpy   Entropy     Cv      % in 
+               cm-1    kJ/mol    kJ/mol   J/mol.K   J/mol.K  Ground IR Int.
+    --   ----------   -------   -------   -------      ----
+  1  A'     658.353    3.9378    0.3428    1.5040    3.8117   95.83   2.40
+  2  A'     701.101    4.1935    0.2946    1.2752    3.4606   96.61   5.93
+  3  A"     762.163    4.5587    0.2364    1.0058    2.9920   97.47  19.51
+  4  A'     948.626    5.6740    0.1178    0.4811    1.8281   98.97 177.04
+  5  A'    1349.937    8.0744    0.0240    0.0927    0.5244   99.85 443.78
+  6  A'    2062.209   12.3347    0.0012    0.0043    0.0392  100.00 478.86
+    --   ----------   -------   -------   -------      ----
+   Total Vibrations   38.7733    1.0168    4.3631   12.6561
+
+          Ideal Gas              2.4789                    
+        Translation              3.7184  160.2187   12.4716
+           Rotation              3.7184   96.9938   12.4716
+         ----------             -------   -------   -------
+             Totals             49.7058  261.5756   37.5993
+
+ Vibrational(v) Corrections:
+    Temp. Correction    Hv      49.7058  
+  Entropy Correction (Hv-TSv)  -28.2829  
+   
+
+  Reason for exit: Successful completion 
+  Properties CPU Time :          .21
+  Properties Wall Time:         2.15
+
+

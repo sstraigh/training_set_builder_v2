@@ -1,0 +1,10 @@
+To run test case, execute (from this directory):
+
+ ../training_set_builder.py 1 output 10 > test_nm_couple1.xyz
+ diff test_nm_couple1.xyz nm_couple1.xyz 
+
+ ../training_set_builder.py 2 output 10 > test_nm_couple2.xyz
+ diff test_nm_couple2.xyz nm_couple2.xyz 
+
+If no differences, then test for coupling one and two normal modes
+  of hydronium has been passed successfully

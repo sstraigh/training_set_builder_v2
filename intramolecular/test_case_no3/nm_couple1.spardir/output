@@ -1,0 +1,63 @@
+Using internal queue
+
+60 Molecules analyzed (55 succeeded, 5 failed)
+      Molecule 1 COMPLETED
+      Molecule 2 COMPLETED
+      Molecule 3 COMPLETED
+      Molecule 4 COMPLETED
+      Molecule 5 COMPLETED
+      Molecule 6 COMPLETED
+      Molecule 7 COMPLETED
+      Molecule 8 COMPLETED
+      Molecule 9 COMPLETED
+      Molecule10 FAILED     OPTIMIZE fatal error (149)
+      Molecule11 COMPLETED
+      Molecule12 COMPLETED
+      Molecule13 COMPLETED
+      Molecule14 COMPLETED
+      Molecule15 COMPLETED
+      Molecule16 COMPLETED
+      Molecule17 COMPLETED
+      Molecule18 COMPLETED
+      Molecule19 COMPLETED
+      Molecule20 COMPLETED
+      Molecule21 FAILED     Cn slipped through
+      Molecule22 COMPLETED
+      Molecule23 FAILED     Cn slipped through
+      Molecule24 COMPLETED
+      Molecule25 COMPLETED
+      Molecule26 COMPLETED
+      Molecule27 COMPLETED
+      Molecule28 COMPLETED
+      Molecule29 COMPLETED
+      Molecule30 FAILED     Cn slipped through
+      Molecule31 COMPLETED
+      Molecule32 COMPLETED
+      Molecule33 COMPLETED
+      Molecule34 COMPLETED
+      Molecule35 COMPLETED
+      Molecule36 COMPLETED
+      Molecule37 COMPLETED
+      Molecule38 COMPLETED
+      Molecule39 COMPLETED
+      Molecule40 COMPLETED
+      Molecule41 COMPLETED
+      Molecule42 COMPLETED
+      Molecule43 COMPLETED
+      Molecule44 COMPLETED
+      Molecule45 COMPLETED
+      Molecule46 COMPLETED
+      Molecule47 COMPLETED
+      Molecule48 COMPLETED
+      Molecule49 COMPLETED
+      Molecule50 COMPLETED
+      Molecule51 COMPLETED
+      Molecule52 COMPLETED
+      Molecule53 COMPLETED
+      Molecule54 COMPLETED
+      Molecule55 COMPLETED
+      Molecule56 COMPLETED
+      Molecule57 COMPLETED
+      Molecule58 COMPLETED
+      Molecule59 FAILED     SCF failed to converge
+      Molecule60 COMPLETED

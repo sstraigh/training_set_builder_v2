@@ -1,0 +1,1137 @@
+<?xml version="1.0"?>
+<molpro xmlns="http://www.molpro.net/schema/molpro-output"
+  xmlns:xsd="http://www.w3.org/1999/XMLSchema"
+  xmlns:cml="http://www.xml-cml.org/schema"
+  xmlns:stm="http://www.xml-cml.org/schema"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+ <!--
+
+ Primary working directories    : /home/sstraight/tmp
+ Secondary working directories  : /home/sstraight/tmp
+ Wavefunction directory         : /home/sstraight/wfu/
+ Main file repository           : /home/sstraight/tmp/
+
+ SHA1      : 41aa48e1468dac041f2eaabdf410f3ce2ee7f8bf
+ NAME      : 2015.1.0
+ ARCHNAME  : linux/x86_64
+ FC        : /opt/intel/composer_xe_2015.1.133/bin/intel64/ifort
+ BLASLIB   : -Wl,-_start-group /opt/intel/mkl/lib/intel64/libmkl_intel_ilp64.a /opt/intel/mkl/lib/intel64/libmkl_sequential.a /opt/intel/mkl/lib/intel64/libmkl_core.a -Wl,-_end-group
+ id        : vbabin
+
+ Nodes     nprocs
+ mill         8
+
+ Using customized tuning parameters: mindgm=1; mindgv=20; mindgc=4; mindgr=1; noblas=0; minvec=7
+ default implementation of scratch files=sf  
+
+ --><job>
+  <!--
+ memory, 32,M
+ 
+ geomtyp=xyz
+ geometry={
+ 3
+ linear triatomic CO2
+  O   1.000000   0.0000000   0.000
+  O  -1.000000   0.0000000   0.000
+  C   0.000000   0.0000000   0.000
+ }
+ 
+ basis
+ default=avdz
+ end
+ 
+ CHARGE = 0, SPIN = 0
+ hf
+ mp2
+ 
+ e_H2O_b3lyp_avqz = energy
+ optg;coord,3n
+ {frequencies
+ thermo,sym=c2v
+ print,thermo}
+
+ Variables initialized (889), CPU time= 0.09 sec
+ Commands  initialized (702), CPU time= 0.04 sec, 572 directives.
+ Default parameters read. Elapsed time= 0.57 sec
+
+ Checking input...
+ Passed
+1
+
+
+                                         ***  PROGRAM SYSTEM MOLPRO  ***
+                                       Copyright, TTI GmbH Stuttgart, 2015
+                                    Version 2015.1 linked Nov 13 2015 17:13:29
+
+
+ **********************************************************************************************************************************
+ LABEL *                                                                                 
+  64 bit mpp version                                                                     DATE: 12-Aug-16          TIME: 14:31:45  
+ **********************************************************************************************************************************
+
+ SHA1:             41aa48e1468dac041f2eaabdf410f3ce2ee7f8bf
+ **********************************************************************************************************************************
+  -->
+  <!--
+ SETTING GEOMTYP        =    XYZ
+
+ Variable memory set to   32000000 words,  buffer space   230000 words
+
+ SETTING BASIS          =    AVDZ
+ SETTING CHARGE         =     0.00000000D+00                                  
+ SETTING SPIN           =     0.00000000D+00                                  
+  --><jobstep command="HF-SCF" commandset="SCFPRO">
+   <!--
+
+
+ Recomputing integrals since basis changed
+
+
+ Using spherical harmonics
+
+ Library entry O      S aug-cc-pVDZ          selected for orbital group  1
+ Library entry O      P aug-cc-pVDZ          selected for orbital group  1
+ Library entry O      D aug-cc-pVDZ          selected for orbital group  1
+ Library entry C      S aug-cc-pVDZ          selected for orbital group  2
+ Library entry C      P aug-cc-pVDZ          selected for orbital group  2
+ Library entry C      D aug-cc-pVDZ          selected for orbital group  2
+
+1PROGRAM * SEWARD (Integral evaluation for generally contracted gaussian basis sets)     Author: Roland Lindh, 1990
+
+ Geometry written to block  1 of record 700
+
+
+ Point group  D2h 
+
+
+   --><cml:molecule>
+    <cml:symmetry pointGroup="D2h"/>
+    <cml:atomArray>
+     <cml:atom id="a1" elementType="O" x3="1.0" y3="0.0" z3="0.0"/>
+     <cml:atom id="a2" elementType="O" x3="-1.0" y3="0.0" z3="0.0"/>
+     <cml:atom id="a3" elementType="C" x3="0.0" y3="0.0" z3="0.0"/>
+    </cml:atomArray>
+    <cml:bondArray>
+     <cml:bond atomRefs2="a1 a3"/>
+     <cml:bond atomRefs2="a2 a3"/>
+    </cml:bondArray>
+   </cml:molecule><!--
+
+ ATOMIC COORDINATES
+
+ NR  ATOM    CHARGE       X              Y              Z
+
+   1  O       8.00    1.889726125    0.000000000    0.000000000
+   2  O       8.00   -1.889726125    0.000000000    0.000000000
+   3  C       6.00    0.000000000    0.000000000    0.000000000
+
+ Bond lengths in Bohr (Angstrom)
+
+ 1-3  1.889726125  2-3  1.889726125
+     ( 1.000000000)     ( 1.000000000)
+
+ Bond angles
+
+  1-3-2  180.00000000
+
+ NUCLEAR CHARGE:                   22
+ NUMBER OF PRIMITIVE AOS:         111
+ NUMBER OF SYMMETRY AOS:          105
+ NUMBER OF CONTRACTIONS:           69   (  19Ag  +  14B3u +   8B2u +   7B1g +   8B1u +   7B2g +   4B3g +   2Au  )
+ NUMBER OF CORE ORBITALS:           3   (   2Ag  +   1B3u +   0B2u +   0B1g +   0B1u +   0B2g +   0B3g +   0Au  )
+ NUMBER OF VALENCE ORBITALS:       12   (   3Ag  +   3B3u +   2B2u +   1B1g +   2B1u +   1B2g +   0B3g +   0Au  )
+
+
+ NUCLEAR REPULSION ENERGY   67.73468300
+
+ Eigenvalues of metric
+
+         1 0.124E-02 0.291E-02 0.824E-02 0.245E-01 0.424E-01 0.143E+00 0.208E+00 0.260E+00
+         2 0.161E-02 0.112E-01 0.218E-01 0.252E-01 0.729E-01 0.130E+00 0.372E+00 0.449E+00
+         3 0.233E-01 0.554E-01 0.126E+00 0.252E+00 0.605E+00 0.121E+01 0.196E+01 0.492E+01
+         4 0.144E-01 0.112E+00 0.157E+00 0.316E+00 0.546E+00 0.164E+01 0.307E+01
+         5 0.233E-01 0.554E-01 0.126E+00 0.252E+00 0.605E+00 0.121E+01 0.196E+01 0.492E+01
+         6 0.144E-01 0.112E+00 0.157E+00 0.316E+00 0.546E+00 0.164E+01 0.307E+01
+         7 0.208E+00 0.524E+00 0.852E+00 0.251E+01
+         8 0.449E+00 0.146E+01
+
+
+ Contracted 2-electron integrals neglected if value below      1.0D-11
+ AO integral compression algorithm  1   Integral accuracy      1.0D-11
+
+     4.719 MB (compressed) written to integral file ( 76.7%)
+
+     Node minimum: 0.524 MB, node maximum: 0.786 MB
+
+
+ NUMBER OF SORTED TWO-ELECTRON INTEGRALS:      48653.     BUFFER LENGTH:  32768
+ NUMBER OF SEGMENTS:   1  SEGMENT LENGTH:      48653      RECORD LENGTH: 524288
+
+ Memory used in sort:       0.61 MW
+
+ SORT1 READ      662951. AND WROTE       48601. INTEGRALS IN      1 RECORDS. CPU TIME:     0.08 SEC, REAL TIME:     0.13 SEC
+ SORT2 READ      407920. AND WROTE      408664. INTEGRALS IN     16 RECORDS. CPU TIME:     0.01 SEC, REAL TIME:     0.02 SEC
+
+ Node minimum:       47117.  Node maximum:       55990. integrals
+
+ OPERATOR DM      FOR CENTER  0  COORDINATES:    0.000000    0.000000    0.000000
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      18       16.45       500      610      700      900      950      970     1000      129      960     1100   
+                                          VAR    BASINP    GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS      S 
+                                         1400     1410     1200     1210     1080     1600     1650     1700   
+                                           T        V       H0       H01     AOSYM     SMH    MOLCAS    OPER   
+
+ PROGRAMS   *        TOTAL       INT
+ CPU TIMES  *         0.87      0.36
+ REAL TIME  *         2.04 SEC
+ DISK USED  *        36.37 MB      
+ GA USED    *         0.00 MB       (max)       0.00 MB       (current)
+ **********************************************************************************************************************************
+
+1PROGRAM * RHF-SCF (CLOSED SHELL)       Authors: W. Meyer, H.-J. Werner
+
+
+ NUMBER OF ELECTRONS:      11+   11-
+ CONVERGENCE THRESHOLDS:    1.00E-06 (Density)    1.00E-07 (Energy)
+ MAX. NUMBER OF ITERATIONS:       60
+ INTERPOLATION TYPE:            DIIS
+ INTERPOLATION STEPS:              2 (START)      1 (STEP)
+ LEVEL SHIFTS:                  0.00 (CLOSED)  0.00 (OPEN) 
+
+
+
+ Orbital guess generated from atomic densities. Full valence occupancy:    5   4   2   1   2   1   0   0
+
+
+ Molecular orbital dump at record        2100.2
+
+ Initial occupancy:   4   3   1   1   1   1   0   0
+
+ ITERATION    DDIFF          GRAD             ENERGY        2-EL.EN.            DIPOLE MOMENTS         DIIS   ORB.
+    1      0.000D+00      0.000D+00      -187.48763641    271.404528    0.00000    0.00000    0.00000    0    start
+    2      0.000D+00      0.230D-01      -187.51816077    269.469988    0.00000    0.00000    0.00000    1    diag
+    3      0.414D-01      0.115D-01      -187.52803740    270.272111    0.00000    0.00000    0.00000    2    diag
+    4      0.139D-01      0.936D-03      -187.52816017    270.170554    0.00000    0.00000    0.00000    3    diag
+    5      0.176D-02      0.145D-03      -187.52816314    270.188769    0.00000    0.00000    0.00000    4    diag
+    6      0.315D-03      0.313D-04      -187.52816334    270.184961    0.00000    0.00000    0.00000    5    diag
+    7      0.678D-04      0.356D-05      -187.52816334    270.184942    0.00000    0.00000    0.00000    6    diag
+    8      0.661D-05      0.358D-06      -187.52816334    270.184950    0.00000    0.00000    0.00000    7    diag
+    9      0.790D-06      0.616D-07      -187.52816334    270.184950    0.00000    0.00000    0.00000    0    orth
+
+ Final occupancy:   4   3   1   1   1   1   0   0
+
+ !RHF STATE 1.1 Energy               -187.528163344741
+   --><property name="Energy" method="RHF" principal="true" stateSymmetry="1" stateNumber="1"
+     value="-187.528163344741"/><!--
+ Nuclear energy                        67.73468300
+ One-electron energy                 -390.35532155
+ Two-electron energy                  135.09247520
+ Virial quotient                       -0.98881633
+ !RHF STATE 1.1 Dipole moment           0.00000000     0.00000000     0.00000000
+ Dipole moment /Debye                   0.00000000     0.00000000     0.00000000
+   --><property name="Dipole moment" method="RHF" principal="true" stateSymmetry="1"
+     stateNumber="1" value="0.0 0.0 0.0"/><!--
+
+ Orbital energies:
+
+         1.1          2.1          3.1          4.1          5.1          6.1
+    -20.615598   -11.394424    -1.627844    -0.778979     0.059395     0.202102
+
+         1.2          2.2          3.2          4.2          5.2
+    -20.615647    -1.582310    -0.766232     0.092021     0.274851
+
+         1.3          2.3          3.3
+     -0.799254     0.081690     0.278589
+
+         1.4          2.4          3.4
+     -0.552821     0.210888     0.696787
+
+         1.5          2.5          3.5
+     -0.799254     0.081690     0.278589
+
+         1.6          2.6          3.6
+     -0.552821     0.210888     0.696787
+
+         1.7          2.7
+      0.406179     1.172631
+
+         1.8          2.8
+      0.999077     3.513323
+
+ HOMO      1.4    -0.552821 =     -15.0430eV
+ LUMO      5.1     0.059395 =       1.6162eV
+ LUMO-HOMO         0.612215 =      16.6592eV
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      18       16.46       500      610      700      900      950      970     1000      129      960     1100   
+                                          VAR    BASINP    GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS      S 
+                                         1400     1410     1200     1210     1080     1600     1650     1700   
+                                           T        V       H0       H01     AOSYM     SMH    MOLCAS    OPER   
+
+              2       4        0.42       700     1000      520     2100   
+                                         GEOM     BASIS   MCVARS     RHF  
+
+ PROGRAMS   *        TOTAL        HF       INT
+ CPU TIMES  *         0.93      0.06      0.36
+ REAL TIME  *         2.25 SEC
+ DISK USED  *       172.25 MB      
+ SF USED    *         0.00 MB      
+ GA USED    *         0.00 MB       (max)       0.00 MB       (current)
+ **********************************************************************************************************************************
+   -->
+   <time start="14:31:45" end="14:31:46" cpu="0.93" system="0.35" real="2.25"/>
+   <storage units="megabyte" memory="257.84" sf="0.0" df="135.88" eaf="36.37" ga="0.0"/>
+  </jobstep><!--
+  --><jobstep command="MP2" commandset="CCSD">
+   <!--
+
+
+1PROGRAM * MP2 (Closed-shell)     Authors: C. Hampel, H.-J. Werner, 1991, M. Deegan, P.J. Knowles, 1992
+
+
+ Convergence thresholds:  THRVAR = 1.00D-12  THRDEN = 1.00D-08
+
+ Number of core orbitals:           3 (   2   1   0   0   0   0   0   0 )
+ Number of closed-shell orbitals:   8 (   2   2   1   1   1   1   0   0 )
+ Number of external orbitals:      58 (  15  11   7   6   7   6   4   2 )
+
+ Molecular orbitals read from record     2100.2  Type=RHF/CANONICAL (state 1.1)
+
+ Number of N-1 electron functions:               8
+ Number of N-2 electron functions:              36
+ Number of singly external CSFs:                78
+ Number of doubly external CSFs:             14488
+ Total number of CSFs:                       14567
+
+ Length of J-op  integral file:               0.00 MB
+ Length of K-op  integral file:               0.06 MB
+
+ Integral transformation finished. Total CPU:   0.03 sec, npass=  1  Memory used:   0.09 MW
+
+ Memory needed for MP2:                      0.00 MW
+
+ SCS-MP2 correlation energy:           -0.436952259094   (PS=  1.200000  PT=  0.333333)
+ SCS-MP2 total energy:               -187.965115603835
+
+
+  Reference energy                   -187.528163344741
+  MP2 singlet pair energy              -0.265186782304
+  MP2 triplet pair energy              -0.190813050529
+  MP2 correlation energy               -0.455999832833
+
+ !MP2 total energy                   -187.984163177574
+   --><property name="energy" method="Reference" stateSymmetry="1" stateNumber="1"
+     value="-187.528163344741"/>
+      <property name="singlet pair energy" method="MP2" stateSymmetry="1" stateNumber="1"
+     value="-0.265186782303835"/>
+      <property name="triplet pair energy" method="MP2" stateSymmetry="1" stateNumber="1"
+     value="-0.190813050529483"/>
+      <property name="correlation energy" method="MP2" stateSymmetry="1" stateNumber="1"
+     value="-0.455999832833318"/>
+      <property name="total energy" method="MP2" principal="true" stateSymmetry="1"
+     stateNumber="1" value="-187.984163177574"/><!--
+
+ KEXT needed  1 integral passes. Memory used:   0.09 MW  CPU time:      0.01 sec
+
+
+ Starting Coupled-perturbed Hartree-Fock, convergence threshold= 1.0D-06
+
+ ITER   MIC  DIIS      VAR         VARC       CPU
+   1     0     1    0.36D-01    0.17D-02     0.00
+   2     4     2    0.28D-03    0.17D-03     0.00
+   3     3     3    0.13D-04    0.32D-05     0.00
+   4     2     4    0.48D-06    0.23D-07     0.00
+
+ CPHF convergence reached in  4 macroiterations and    9 microiterations.   Accuracy: 4.8360D-07
+
+ CPHF solution written to record  4101.2
+
+ Dipole moments (unrelaxed):            0.00000000     0.00000000     0.00000000
+ Orbital relaxation contribution:       0.00000000     0.00000000     0.00000000
+ !!MP2 STATE 1.1 Dipole moment          0.00000000     0.00000000     0.00000000
+ Dipole moment /Debye                   0.00000000     0.00000000     0.00000000
+   --><property name="Dipole moment" method="!MP2" principal="true" stateSymmetry="1"
+     stateNumber="1" value="0.0 0.0 0.0"/><!--
+ 
+ CPU-time for density and lagrangian:                  0.00 sec
+ CPU-time for coupled-perturbed hartree-fock:          0.00 sec
+
+ MP2 Gradient info saved on record         5200.1
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      20       16.95       500      610      700      900      950      970     1000      129      960     1100   
+                                          VAR    BASINP    GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS      S 
+                                         1400     1410     1200     1210     1080     1600     1650     1700     1380     5200   
+                                           T        V       H0       H01     AOSYM     SMH    MOLCAS    OPER     JKOP      MP2  
+
+              2       6        0.49       700     1000      520     2100     4100     4101   
+                                         GEOM     BASIS   MCVARS     RHF     CPHF     CPHF   
+
+ PROGRAMS   *        TOTAL       MP2        HF       INT
+ CPU TIMES  *         1.09      0.15      0.06      0.36
+ REAL TIME  *         2.55 SEC
+ DISK USED  *       176.31 MB      
+ SF USED    *         1.25 MB      
+ GA USED    *         0.00 MB       (max)       0.00 MB       (current)
+ **********************************************************************************************************************************
+   -->
+   <time start="14:31:46" end="14:31:46" cpu="0.16" system="0.05" real="0.3"/>
+   <storage units="megabyte" memory="257.84" sf="1.25" df="139.94" eaf="36.37" ga="0.0"/>
+  </jobstep><!--
+ SETTING E_H2O_B3LYP_AVQZ                =    -187.98416318  AU                              
+  --><jobstep command="OPTG" commandset="OPT">
+   <!--
+
+
+ PROGRAM * OPT (Geometry optimization)     Authors: F. Eckert and H.-J. Werner
+
+
+ BFGS update of hessian
+
+ *** Long output written to logfile /home/sstraight/projects/h3o/1B_training_set/training_set_builder/test_case_co2/output.log ***
+
+
+ Geometry optimization using default procedure for command MP2
+
+ Geometry written to block  1 of record 700
+   --><gradient name="MP2 GRADIENT" stateSymmetry="1" stateNumber="1"
+     virial="-2.53931091778076">
+     -0.671872734565   0.000000000000   0.000000000000
+      0.671872734565   0.000000000000   0.000000000000
+      0.000000000000   0.000000000000   0.000000000000
+   </gradient><!--
+
+ Making model hessian for cartesian coordinates
+
+ Entering Rational Function Geometry Optimization
+   --><opt energy="-187.98416318" type="MP2" line="0.0" convergence="0.3"
+     gradient="0.950171533410471"/><!--
+   --><jobstep command="HF-SCF" commandset="SCFPRO">
+    <!--
+    --><cml:molecule>
+     <cml:symmetry pointGroup="D2h"/>
+     <cml:atomArray>
+      <cml:atom id="a1" elementType="O" x3="1.11225543828727" y3="0.0" z3="0.0"/>
+      <cml:atom id="a2" elementType="O" x3="-1.11225543828727" y3="0.0" z3="0.0"/>
+      <cml:atom id="a3" elementType="C" x3="0.0" y3="0.0" z3="0.0"/>
+     </cml:atomArray>
+     <cml:bondArray>
+      <cml:bond atomRefs2="a1 a3"/>
+      <cml:bond atomRefs2="a2 a3"/>
+     </cml:bondArray>
+    </cml:molecule><!--
+    --><property name="Energy" method="RHF" principal="true" stateSymmetry="1" stateNumber="1"
+      value="-187.659825457358"/><!--
+    --><property name="Dipole moment" method="RHF" principal="true" stateSymmetry="1"
+      stateNumber="1" value="0.0 0.0 0.0"/><!--
+    -->
+    <time start="14:31:48" end="14:31:48" cpu="0.98" system="0.43" real="1.54"/>
+    <storage units="megabyte" memory="257.84" sf="1.25" df="139.94" eaf="36.37" ga="0.0"/>
+   </jobstep><!--
+   --><jobstep command="MP2" commandset="CCSD">
+    <!--
+    --><property name="energy" method="Reference" stateSymmetry="1" stateNumber="1"
+      value="-187.659825457358"/>
+       <property name="singlet pair energy" method="MP2" stateSymmetry="1" stateNumber="1"
+      value="-0.284669312299377"/>
+       <property name="triplet pair energy" method="MP2" stateSymmetry="1" stateNumber="1"
+      value="-0.205259843187939"/>
+       <property name="correlation energy" method="MP2" stateSymmetry="1" stateNumber="1"
+      value="-0.489929155487316"/>
+       <property name="total energy" method="MP2" principal="true" stateSymmetry="1"
+      stateNumber="1" value="-188.149754612845"/><!--
+    --><property name="Dipole moment" method="!MP2" principal="true" stateSymmetry="1"
+      stateNumber="1" value="0.0 0.0 0.0"/><!--
+    -->
+    <time start="14:31:48" end="14:31:48" cpu="0.12" system="0.04" real="0.15"/>
+    <storage units="megabyte" memory="257.84" sf="1.25" df="139.97" eaf="36.37" ga="0.0"/>
+   </jobstep><!--
+
+ ITER.   ENERGY(OLD)    ENERGY(NEW)      DE          GRADMAX     GRADNORM    GRADRMS     STEPMAX     STEPLEN     STEPRMS   CPU-time
+   1  -187.98416318  -188.14975461    -0.16559144  0.95017153  0.95017153  0.23754288  0.30000000  0.30000000  0.17320508      1.10
+   --><gradient name="MP2 GRADIENT" stateSymmetry="1" stateNumber="1"
+     virial="-0.705990613648722">
+     -0.167944399733   0.000000000000   0.000000000000
+      0.167944399733   0.000000000000   0.000000000000
+      0.000000000000   0.000000000000   0.000000000000
+   </gradient><!--
+   --><opt energy="-188.14975461" type="MP2" line="0.0"
+     convergence="0.990011828137987E-01" gradient="0.237509247827327"/><!--
+   --><jobstep command="HF-SCF" commandset="SCFPRO">
+    <!--
+    --><cml:molecule>
+     <cml:symmetry pointGroup="D2h"/>
+     <cml:atomArray>
+      <cml:atom id="a1" elementType="O" x3="1.14930017551301" y3="0.0" z3="0.0"/>
+      <cml:atom id="a2" elementType="O" x3="-1.14930017551301" y3="0.0" z3="0.0"/>
+      <cml:atom id="a3" elementType="C" x3="0.0" y3="0.0" z3="0.0"/>
+     </cml:atomArray>
+     <cml:bondArray>
+      <cml:bond atomRefs2="a1 a3"/>
+      <cml:bond atomRefs2="a2 a3"/>
+     </cml:bondArray>
+    </cml:molecule><!--
+    --><property name="Energy" method="RHF" principal="true" stateSymmetry="1" stateNumber="1"
+      value="-187.664091915965"/><!--
+    --><property name="Dipole moment" method="RHF" principal="true" stateSymmetry="1"
+      stateNumber="1" value="0.0 0.0 0.0"/><!--
+    -->
+    <time start="14:31:49" end="14:31:49" cpu="0.89" system="0.12" real="1.03"/>
+    <storage units="megabyte" memory="257.84" sf="1.25" df="139.97" eaf="36.37" ga="0.0"/>
+   </jobstep><!--
+   --><jobstep command="MP2" commandset="CCSD">
+    <!--
+    --><property name="energy" method="Reference" stateSymmetry="1" stateNumber="1"
+      value="-187.664091915966"/>
+       <property name="singlet pair energy" method="MP2" stateSymmetry="1" stateNumber="1"
+      value="-0.29133788674777"/>
+       <property name="triplet pair energy" method="MP2" stateSymmetry="1" stateNumber="1"
+      value="-0.210488204298209"/>
+       <property name="correlation energy" method="MP2" stateSymmetry="1" stateNumber="1"
+      value="-0.501826091045979"/>
+       <property name="total energy" method="MP2" principal="true" stateSymmetry="1"
+      stateNumber="1" value="-188.165918007012"/><!--
+    --><property name="Dipole moment" method="!MP2" principal="true" stateSymmetry="1"
+      stateNumber="1" value="0.0 0.0 0.0"/><!--
+    -->
+    <time start="14:31:49" end="14:31:49" cpu="0.14" system="0.01" real="0.15"/>
+    <storage units="megabyte" memory="257.84" sf="1.25" df="139.97" eaf="36.37" ga="0.0"/>
+   </jobstep><!--
+   2  -188.14975461  -188.16591801    -0.01616339  0.23750925  0.23750925  0.05937731  0.09900118  0.09900118  0.05715836      2.13
+   --><gradient name="MP2 GRADIENT" stateSymmetry="1" stateNumber="1"
+     virial="-0.291290001182556">
+     -0.067059952517   0.000000000000   0.000000000000
+      0.067059952517   0.000000000000   0.000000000000
+      0.000000000000   0.000000000000   0.000000000000
+   </gradient><!--
+   --><opt energy="-188.16591801" type="MP2" line="0.0"
+     convergence="0.655255546225608E-01" gradient="0.948370943412088E-01"/><!--
+   --><jobstep command="HF-SCF" commandset="SCFPRO">
+    <!--
+    --><cml:molecule>
+     <cml:symmetry pointGroup="D2h"/>
+     <cml:atomArray>
+      <cml:atom id="a1" elementType="O" x3="1.17381884169025" y3="0.0" z3="0.0"/>
+      <cml:atom id="a2" elementType="O" x3="-1.17381884169025" y3="0.0" z3="0.0"/>
+      <cml:atom id="a3" elementType="C" x3="0.0" y3="0.0" z3="0.0"/>
+     </cml:atomArray>
+     <cml:bondArray>
+      <cml:bond atomRefs2="a1 a3"/>
+      <cml:bond atomRefs2="a2 a3"/>
+     </cml:bondArray>
+    </cml:molecule><!--
+    --><property name="Energy" method="RHF" principal="true" stateSymmetry="1" stateNumber="1"
+      value="-187.659749258348"/><!--
+    --><property name="Dipole moment" method="RHF" principal="true" stateSymmetry="1"
+      stateNumber="1" value="0.0 0.0 0.0"/><!--
+    -->
+    <time start="14:31:50" end="14:31:50" cpu="0.88" system="0.14" real="1.03"/>
+    <storage units="megabyte" memory="257.84" sf="1.25" df="139.97" eaf="36.37" ga="0.0"/>
+   </jobstep><!--
+   --><jobstep command="MP2" commandset="CCSD">
+    <!--
+    --><property name="energy" method="Reference" stateSymmetry="1" stateNumber="1"
+      value="-187.659749258348"/>
+       <property name="singlet pair energy" method="MP2" stateSymmetry="1" stateNumber="1"
+      value="-0.295770561721998"/>
+       <property name="triplet pair energy" method="MP2" stateSymmetry="1" stateNumber="1"
+      value="-0.214027225309987"/>
+       <property name="correlation energy" method="MP2" stateSymmetry="1" stateNumber="1"
+      value="-0.509797787031985"/>
+       <property name="total energy" method="MP2" principal="true" stateSymmetry="1"
+      stateNumber="1" value="-188.16954704538"/><!--
+    --><property name="Dipole moment" method="!MP2" principal="true" stateSymmetry="1"
+      stateNumber="1" value="0.0 0.0 0.0"/><!--
+    -->
+    <time start="14:31:50" end="14:31:50" cpu="0.13" system="0.01" real="0.14"/>
+    <storage units="megabyte" memory="257.84" sf="1.25" df="139.97" eaf="36.37" ga="0.0"/>
+   </jobstep><!--
+   3  -188.16591801  -188.16954705    -0.00362904  0.09483709  0.09483709  0.02370927  0.06552555  0.06552555  0.03783120      3.14
+   --><gradient name="MP2 GRADIENT" stateSymmetry="1" stateNumber="1"
+     virial="-0.566088811492096E-01">
+     -0.012760116287   0.000000000000   0.000000000000
+      0.012760116287   0.000000000000   0.000000000000
+      0.000000000000   0.000000000000   0.000000000000
+   </gradient><!--
+   --><opt energy="-188.16954705" type="MP2" line="0.0"
+     convergence="0.153944395645578E-01" gradient="0.180455295106308E-01"/><!--
+   --><jobstep command="HF-SCF" commandset="SCFPRO">
+    <!--
+    --><cml:molecule>
+     <cml:symmetry pointGroup="D2h"/>
+     <cml:atomArray>
+      <cml:atom id="a1" elementType="O" x3="1.17957920689194" y3="0.0" z3="0.0"/>
+      <cml:atom id="a2" elementType="O" x3="-1.17957920689194" y3="0.0" z3="0.0"/>
+      <cml:atom id="a3" elementType="C" x3="0.0" y3="0.0" z3="0.0"/>
+     </cml:atomArray>
+     <cml:bondArray>
+      <cml:bond atomRefs2="a1 a3"/>
+      <cml:bond atomRefs2="a2 a3"/>
+     </cml:bondArray>
+    </cml:molecule><!--
+    --><property name="Energy" method="RHF" principal="true" stateSymmetry="1" stateNumber="1"
+      value="-187.65802269178"/><!--
+    --><property name="Dipole moment" method="RHF" principal="true" stateSymmetry="1"
+      stateNumber="1" value="0.0 0.0 0.0"/><!--
+    -->
+    <time start="14:31:51" end="14:31:52" cpu="0.88" system="0.16" real="1.05"/>
+    <storage units="megabyte" memory="257.84" sf="1.25" df="139.97" eaf="36.37" ga="0.0"/>
+   </jobstep><!--
+   --><jobstep command="MP2" commandset="CCSD">
+    <!--
+    --><property name="energy" method="Reference" stateSymmetry="1" stateNumber="1"
+      value="-187.65802269178"/>
+       <property name="singlet pair energy" method="MP2" stateSymmetry="1" stateNumber="1"
+      value="-0.29681132141443"/>
+       <property name="triplet pair energy" method="MP2" stateSymmetry="1" stateNumber="1"
+      value="-0.214864812811689"/>
+       <property name="correlation energy" method="MP2" stateSymmetry="1" stateNumber="1"
+      value="-0.511676134226119"/>
+       <property name="total energy" method="MP2" principal="true" stateSymmetry="1"
+      stateNumber="1" value="-188.169698826006"/><!--
+    --><property name="Dipole moment" method="!MP2" principal="true" stateSymmetry="1"
+      stateNumber="1" value="0.0 0.0 0.0"/><!--
+    -->
+    <time start="14:31:52" end="14:31:52" cpu="0.14" system="0.02" real="0.16"/>
+    <storage units="megabyte" memory="257.84" sf="1.25" df="139.97" eaf="36.37" ga="0.0"/>
+   </jobstep><!--
+   4  -188.16954705  -188.16969883    -0.00015178  0.01804553  0.01804553  0.00451138  0.01539444  0.01539444  0.00888798      4.16
+   --><gradient name="MP2 GRADIENT" stateSymmetry="1" stateNumber="1"
+     virial="-0.560959987907165E-02">
+     -0.001258276003   0.000000000000   0.000000000000
+      0.001258276003   0.000000000000   0.000000000000
+      0.000000000000   0.000000000000   0.000000000000
+   </gradient><!--
+   --><opt energy="-188.16969883" type="MP2" line="0.0"
+     convergence="0.168411301663074E-02" gradient="0.177947098807843E-02"/><!--
+   --><jobstep command="HF-SCF" commandset="SCFPRO">
+    <!--
+    --><cml:molecule>
+     <cml:symmetry pointGroup="D2h"/>
+     <cml:atomArray>
+      <cml:atom id="a1" elementType="O" x3="1.18020937637463" y3="0.0" z3="0.0"/>
+      <cml:atom id="a2" elementType="O" x3="-1.18020937637463" y3="0.0" z3="0.0"/>
+      <cml:atom id="a3" elementType="C" x3="0.0" y3="0.0" z3="0.0"/>
+     </cml:atomArray>
+     <cml:bondArray>
+      <cml:bond atomRefs2="a1 a3"/>
+      <cml:bond atomRefs2="a2 a3"/>
+     </cml:bondArray>
+    </cml:molecule><!--
+    --><property name="Energy" method="RHF" principal="true" stateSymmetry="1" stateNumber="1"
+      value="-187.657818678116"/><!--
+    --><property name="Dipole moment" method="RHF" principal="true" stateSymmetry="1"
+      stateNumber="1" value="0.0 0.0 0.0"/><!--
+    -->
+    <time start="14:31:52" end="14:31:53" cpu="0.87" system="0.2" real="1.07"/>
+    <storage units="megabyte" memory="257.84" sf="1.25" df="139.97" eaf="36.37" ga="0.0"/>
+   </jobstep><!--
+   --><jobstep command="MP2" commandset="CCSD">
+    <!--
+    --><property name="energy" method="Reference" stateSymmetry="1" stateNumber="1"
+      value="-187.657818678116"/>
+       <property name="singlet pair energy" method="MP2" stateSymmetry="1" stateNumber="1"
+      value="-0.296925128628787"/>
+       <property name="triplet pair energy" method="MP2" stateSymmetry="1" stateNumber="1"
+      value="-0.214956547741821"/>
+       <property name="correlation energy" method="MP2" stateSymmetry="1" stateNumber="1"
+      value="-0.511881676370609"/>
+       <property name="total energy" method="MP2" principal="true" stateSymmetry="1"
+      stateNumber="1" value="-188.169700354486"/><!--
+    --><property name="Dipole moment" method="!MP2" principal="true" stateSymmetry="1"
+      stateNumber="1" value="0.0 0.0 0.0"/><!--
+    -->
+    <time start="14:31:53" end="14:31:53" cpu="0.14" system="0.02" real="0.16"/>
+    <storage units="megabyte" memory="257.84" sf="1.25" df="139.97" eaf="36.37" ga="0.0"/>
+   </jobstep><!--
+   5  -188.16969883  -188.16970035    -0.00000153  0.00177947  0.00177947  0.00044487  0.00168411  0.00168411  0.00097232      5.17
+   --><gradient name="MP2 GRADIENT" stateSymmetry="1" stateNumber="1"
+     virial="-0.121295586150728E-03">
+     -0.000027192997   0.000000000000   0.000000000000
+      0.000027192997   0.000000000000   0.000000000000
+      0.000000000000   0.000000000000   0.000000000000
+   </gradient><!--
+   --><opt energy="-188.16970035" type="MP2" line="0.0"
+     convergence="0.371998312660438E-04" gradient="0.384567051073817E-04"/><!--
+   --><jobstep command="HF-SCF" commandset="SCFPRO">
+    <!--
+    --><cml:molecule>
+     <cml:symmetry pointGroup="D2h"/>
+     <cml:atomArray>
+      <cml:atom id="a1" elementType="O" x3="1.18022329598584" y3="0.0" z3="0.0"/>
+      <cml:atom id="a2" elementType="O" x3="-1.18022329598584" y3="0.0" z3="0.0"/>
+      <cml:atom id="a3" elementType="C" x3="0.0" y3="0.0" z3="0.0"/>
+     </cml:atomArray>
+     <cml:bondArray>
+      <cml:bond atomRefs2="a1 a3"/>
+      <cml:bond atomRefs2="a2 a3"/>
+     </cml:bondArray>
+    </cml:molecule><!--
+    --><property name="Energy" method="RHF" principal="true" stateSymmetry="1" stateNumber="1"
+      value="-187.657814138388"/><!--
+    --><property name="Dipole moment" method="RHF" principal="true" stateSymmetry="1"
+      stateNumber="1" value="0.0 0.0 0.0"/><!--
+    -->
+    <time start="14:31:54" end="14:31:54" cpu="0.89" system="0.17" real="1.07"/>
+    <storage units="megabyte" memory="257.84" sf="1.25" df="139.97" eaf="36.37" ga="0.0"/>
+   </jobstep><!--
+   --><jobstep command="MP2" commandset="CCSD">
+    <!--
+    --><property name="energy" method="Reference" stateSymmetry="1" stateNumber="1"
+      value="-187.657814138388"/>
+       <property name="singlet pair energy" method="MP2" stateSymmetry="1" stateNumber="1"
+      value="-0.296927650392493"/>
+       <property name="triplet pair energy" method="MP2" stateSymmetry="1" stateNumber="1"
+      value="-0.214958580526527"/>
+       <property name="correlation energy" method="MP2" stateSymmetry="1" stateNumber="1"
+      value="-0.511886230919021"/>
+       <property name="total energy" method="MP2" principal="true" stateSymmetry="1"
+      stateNumber="1" value="-188.169700369307"/><!--
+    --><property name="Dipole moment" method="!MP2" principal="true" stateSymmetry="1"
+      stateNumber="1" value="0.0 0.0 0.0"/><!--
+    -->
+    <time start="14:31:54" end="14:31:54" cpu="0.15" system="0.01" real="0.15"/>
+    <storage units="megabyte" memory="257.84" sf="1.25" df="139.97" eaf="36.37" ga="0.0"/>
+   </jobstep><!--
+   6  -188.16970035  -188.16970037    -0.00000001  0.00003846  0.00003846  0.00000961  0.00003720  0.00003720  0.00002148      6.21
+
+ END OF GEOMETRY OPTIMIZATION.
+
+ Current geometry (xyz format, in Angstrom)
+
+    3
+ MP2/AVDZ  ENERGY=-188.16970037
+ O          1.1802232960        0.0000000000        0.0000000000
+ O         -1.1802232960        0.0000000000        0.0000000000
+ C          0.0000000000        0.0000000000        0.0000000000
+
+ **********************************************************************************************************************************
+
+ Geometry written to block  1 of record 700
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      20       16.95       500      610      700      900      950      970     1000      129      960     1100   
+                                          VAR    BASINP    GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS      S 
+                                         1400     1410     1200     1210     1080     1600     1650     1700     1380     5200   
+                                           T        V       H0       H01     AOSYM     SMH    MOLCAS    OPER     JKOP      MP2  
+
+              2       7        0.49       700     1000      520     2100     4100     4101     9001   
+                                         GEOM     BASIS   MCVARS     RHF     CPHF     CPHF    DEN_MP2    
+
+ PROGRAMS   *        TOTAL      OPTG       MP2        HF       INT
+ CPU TIMES  *         7.31      6.22      0.15      0.06      0.36
+ REAL TIME  *        10.26 SEC
+ DISK USED  *       176.35 MB      
+ SF USED    *         1.25 MB      
+ GA USED    *         0.00 MB       (max)       0.00 MB       (current)
+ **********************************************************************************************************************************
+   --><time start="14:31:46" end="14:31:54" cpu="6.22" system="1.33" real="7.71"/><!--
+   --><storage units="megabyte" memory="257.84" sf="1.25" df="139.97" eaf="36.37" ga="0.0"/><!--
+  --></jobstep><!--
+  --><jobstep command="FREQ" commandset="FREQ">
+   <!--
+
+
+ PROGRAM * HESSIAN
+
+ Computing numerical hessian using default procedure for command MP2
+
+ Symmetry elements for unique displacements: X  Y  Z  
+
+ Using no symmetry in wavefunction calculations
+
+ Running default procedure: HF-SCF000  MP2
+ 
+
+ Numerically approximating hessian using central gradient differences
+
+ Task list generated. Total number of displacements:      7
+
+   --><gradient name="MP2 GRADIENT" stateSymmetry="1" stateNumber="1"
+     virial="0.227121548028546E-01">
+      0.009661387786  -0.000000000000   0.000000000000
+     -0.000478751720  -0.000000000000  -0.000000000000
+     -0.009182636066   0.000000000000  -0.000000000000
+   </gradient><!--
+   --><gradient name="MP2 GRADIENT" stateSymmetry="1" stateNumber="1"
+     virial="-0.233024356155298E-01">
+     -0.010004072207   0.000000000000  -0.000000000000
+      0.000488905858  -0.000000000000  -0.000000000000
+      0.009515166349  -0.000000000000   0.000000000000
+   </gradient><!--
+   --><gradient name="MP2 GRADIENT" stateSymmetry="1" stateNumber="1"
+     virial="0.453255081927185E-04">
+      0.000019070497   0.000354823952   0.000000000000
+      0.000000338805   0.000354718104   0.000000000000
+     -0.000019409302  -0.000709542056  -0.000000000000
+   </gradient><!--
+   --><gradient name="MP2 GRADIENT" stateSymmetry="1" stateNumber="1"
+     virial="0.453253391737286E-04">
+      0.000019070455   0.000000000000   0.000354823934
+      0.000000338839   0.000000000000   0.000354718151
+     -0.000019409294  -0.000000000000  -0.000709542085
+   </gradient><!--
+   --><gradient name="MP2 GRADIENT" stateSymmetry="1" stateNumber="1"
+     virial="-0.555061816788837E-03">
+     -0.009515094699  -0.000000000000  -0.000000000000
+     -0.009182387423  -0.000000000000  -0.000000000000
+      0.018697482122   0.000000000000   0.000000000000
+   </gradient><!--
+    5 tasks completed, CPU=9s Elapsed=9s
+   --><gradient name="MP2 GRADIENT" stateSymmetry="1" stateNumber="1"
+     virial="0.78273405611281E-04">
+      0.000014394871  -0.000709514860   0.000000000000
+     -0.000014338099  -0.000709514779   0.000000000000
+     -0.000000056772   0.001419029639  -0.000000000000
+   </gradient><!--
+   --><gradient name="MP2 GRADIENT" stateSymmetry="1" stateNumber="1"
+     virial="0.782732389032198E-04">
+      0.000014394834   0.000000000000  -0.000709514849
+     -0.000014338062   0.000000000000  -0.000709514769
+     -0.000000056772  -0.000000000000   0.001419029618
+   </gradient><!--
+
+ Numerical MP2 hessian completed. CPU-time:    12.59 sec, Elapsed:    12.74 sec
+
+ MP2 hessian saved to record  5300.2
+
+ FREQUENCIES * CALCULATION OF HARMONIC VIBRATIONAL SPECTRA FOR MP2
+
+
+ Permanent Dipole Moment [debye]
+   1-  3    0.000000    0.000000    0.000000
+
+ Dipole Moment Norm    0.0000000 [debye]
+
+ Dipole Moment Derivatives [debye/ang]
+                   1             2             3             4             5             6             7             8
+         1    -5.4132000     0.0000000     0.0000000    -5.4132000     0.0000000     0.0000000    10.8264633     0.0000000
+         2    -0.0000000    -1.0525368     0.0000000     0.0000000    -1.0525368     0.0000000     0.0000000     2.1050063
+         3     0.0000000     0.0000000    -1.0525367    -0.0000000     0.0000000    -1.0525367     0.0000000     0.0000000
+                   9
+         1     0.0000000
+         2     0.0000000
+         3     2.1050060
+
+ Projecting out rotations and translations
+
+   Low Vibration      Wavenumber
+        Nr             [1/cm] 
+        1                0.00
+        2                0.00
+        3                0.00
+        4                0.00
+        5                0.00
+
+     Vibration        Wavenumber
+        Nr             [1/cm] 
+        1              655.27
+        2              655.27
+        3             1305.32
+        4             2378.55
+
+ FREQUENCIES * CALCULATION OF NORMAL MODES FOR MP2
+
+
+ Atomic Coordinates
+
+  Nr  Atom  Charge       X              Y              Z
+
+   1   O     8.00    2.230298795    0.000000000    0.000000000
+   2   O     8.00   -2.230298795    0.000000000    0.000000000
+   3   C     6.00    0.000000000    0.000000000    0.000000000
+
+ Frequencies dumped to record   5400.2
+
+ Gradient norm at reference geometry: 0.38457D-04
+
+ Normal Modes
+
+                              1 B3u       2 B2u       3 Ag        4 B1u
+ Wavenumbers [cm-1]          655.27      655.27     1305.32     2378.55
+ Intensities [km/mol]         21.44       21.44        0.00      567.23
+ Intensities [relative]        3.78        3.78        0.00      100.00
+           GX1             -0.00000     0.00000     0.17678    -0.09235
+           GY1             -0.09235    -0.00000    -0.00000    -0.00000
+           GZ1              0.00000    -0.09235     0.00000     0.00000
+           GX2              0.00000    -0.00000    -0.17678    -0.09235
+           GY2             -0.09235    -0.00000    -0.00000     0.00000
+           GZ2              0.00000    -0.09235     0.00000     0.00000
+           GX3             -0.00000     0.00000     0.00000     0.24604
+           GY3              0.24604     0.00000     0.00000     0.00000
+           GZ3             -0.00000     0.24604    -0.00000    -0.00000
+
+
+ Normal Modes of low/zero frequencies
+
+                                  1           2           3           4           5
+ Wavenumbers [cm-1]            0.00        0.00        0.00        0.00        0.00
+ Intensities [km/mol]          0.00        0.00        0.00        0.00        0.00
+ Intensities [relative]        0.00        0.00        0.00        0.00        0.00
+           GX1             -0.00143    -0.00293     0.00632     0.03721     0.14590
+           GY1              0.23220     0.00346     0.00586    -0.00141     0.00245
+           GZ1              0.00105    -0.01402     0.04421     0.22005    -0.05831
+           GX2             -0.00143    -0.00293     0.00632     0.03721     0.14590
+           GY2             -0.03990     0.22824    -0.00577     0.01599     0.00036
+           GZ2             -0.00624     0.00994     0.21789    -0.07900     0.01085
+           GX3             -0.00143    -0.00293     0.00632     0.03721     0.14590
+           GY3              0.09615     0.11585     0.00004     0.00729     0.00141
+           GZ3             -0.00260    -0.00204     0.13105     0.07052    -0.02373
+
+
+ FREQUENCIES * CALCULATION OF THERMODYNAMICAL PROPERTIES
+
+ Temperature   298.150 [K]  Pressure   1.00000 [atm]
+ Atom  1: O         Mass  15.99940
+ Atom  2: O         Mass  15.99940
+ Atom  3: C         Mass  12.01100
+
+ Molecular Mass:    44.00980 [a.u.]
+ Moments of Inertia         159.16948   159.16948     0.00000 [a.u.]
+ Point Group C2V   Order of principal axis 0
+ Rotational Symmetry factor  1.0
+ Rotational Temperature      0.544150 [K]
+ Rotational Constant        11.338316 [GHz]
+
+ Vibrational Temperatures [K]    942.78   942.78  1878.05  3422.18
+
+ Zero-Point vibrational Energy       29.873 [kJ/Mol]
+                                      7.140 [kcal/Mol]
+
+ Electronic Energy at 0 [K]:                      -188.169700 [H]
+ Electronic Energy + Zero-Point correction:       -188.158322 [H]
+ Electronic Energy at     298.150 [K]:            -188.155687 [H]
+ Enthalpy H at            298.150 [K]:            -188.154743 [H]
+ Free Enthalpy G at       298.150 [K]:            -188.179708 [H]
+
+ Partition Function  Z                 log10(Z)          ln(Z)
+ Electronic      0.100000D+01          0.000000          0.000000
+ Translation     0.114761D+08          7.059794         16.255778
+ Rotation        0.547919D+03          2.738716          6.306127
+ Vibration       0.109239D+01          0.038378          0.088370
+ Total           0.686893D+10          9.836889         22.561904
+
+                       H(T)-H(0)              Cv                 S
+                       [kJ/Mol]          [J/Mol K]          [J/Mol K] 
+ Electronic               0.000              0.000              0.000
+ Translation              3.718             12.472            155.945
+ Rotation                 2.479              8.315             60.747
+ Vibration                0.722              8.296              3.157
+ Volume (RT)              2.479              0.000              0.000
+ Total                    9.399             29.082            219.849
+
+ Thermal energies including ZPE:
+
+ H(T)-E(0)               39.272 kJ/Mol
+ U(T)-E(0)               36.793 kJ/Mol
+
+                       H(T)-H(0)              Cv                 S
+                       [kcal/Mol]        [cal/Mol K]        [cal/Mol K] 
+ Electronic               0.000              0.000              0.000
+ Translation              0.889              2.981             37.272
+ Rotation                 0.592              1.987             14.519
+ Vibration                0.173              1.983              0.754
+ Volume (RT)              0.592              0.000              0.000
+ Total                    2.246              6.951             52.545
+
+ Thermal energies including ZPE:
+
+ H(T)-E(0)                9.386 kcal/Mol
+ U(T)-E(0)                8.794 kcal/Mol
+   --><cml:molecule>
+    <cml:symmetry pointGroup="C1"/>
+    <cml:atomArray>
+     <cml:atom id="a1" elementType="O" x3="0.0" y3="0.0" z3="1.18022329598584"/>
+     <cml:atom id="a2" elementType="O" x3="0.0" y3="0.0" z3="-1.18022329598584"/>
+     <cml:atom id="a3" elementType="C" x3="0.0" y3="0.0" z3="0.0"/>
+    </cml:atomArray>
+    <cml:bondArray>
+     <cml:bond atomRefs2="a1 a3"/>
+     <cml:bond atomRefs2="a2 a3"/>
+    </cml:bondArray>
+   </cml:molecule><!--
+ Frequency information read from record  5400.2
+   -->
+   <vibrations>
+    <normalCoordinate wavenumber="2378.55" units="inverseCentimetre">
+     -0.09235237  0.00000000  0.00000000
+     -0.09235237  0.00000000  0.00000000
+      0.24603821  0.00000000  0.00000000
+    </normalCoordinate>
+    <normalCoordinate wavenumber="1305.32" units="inverseCentimetre">
+      0.17678001  0.00000000  0.00000000
+     -0.17678001  0.00000000  0.00000000
+      0.00000000  0.00000000  0.00000000
+    </normalCoordinate>
+    <normalCoordinate wavenumber="655.27" units="inverseCentimetre">
+      0.00000000  0.00000000 -0.09235237
+      0.00000000  0.00000000 -0.09235237
+      0.00000000  0.00000001  0.24603821
+    </normalCoordinate>
+    <normalCoordinate wavenumber="655.27" units="inverseCentimetre">
+      0.00000000 -0.09235237  0.00000000
+      0.00000000 -0.09235237  0.00000000
+      0.00000000  0.24603821 -0.00000001
+    </normalCoordinate>
+    <normalCoordinate wavenumber="0.0" units="inverseCentimetre">
+      0.14589982  0.00245277 -0.05831266
+      0.14589982  0.00036453  0.01085438
+      0.14589982  0.00140865 -0.02372914
+    </normalCoordinate>
+    <normalCoordinate wavenumber="0.0" units="inverseCentimetre">
+      0.03721446 -0.00141194  0.22004708
+      0.03721446  0.01599280 -0.07899728
+      0.03721446  0.00729043  0.07052490
+    </normalCoordinate>
+    <normalCoordinate wavenumber="0.0" units="inverseCentimetre">
+      0.00631683  0.00585914  0.04420995
+      0.00631683 -0.00577321  0.21789279
+      0.00631683  0.00004297  0.13105137
+    </normalCoordinate>
+    <normalCoordinate wavenumber="0.0" units="inverseCentimetre">
+     -0.00293094  0.00346429 -0.01402434
+     -0.00293094  0.22823766  0.00993862
+     -0.00293094  0.11585097 -0.00204286
+    </normalCoordinate>
+    <normalCoordinate wavenumber="0.0" units="inverseCentimetre">
+     -0.00143051  0.23220474  0.00104766
+     -0.00143051 -0.03989638 -0.00624129
+     -0.00143051  0.09615418 -0.00259682
+    </normalCoordinate>
+   </vibrations>
+
+ Recomputing wavefunction at initial geometry
+   <jobstep command="HF-SCF" commandset="SCFPRO">
+    <!--
+    --><cml:molecule>
+     <cml:symmetry pointGroup="D2h"/>
+     <cml:atomArray>
+      <cml:atom id="a1" elementType="O" x3="1.18022329598584" y3="0.0" z3="0.0"/>
+      <cml:atom id="a2" elementType="O" x3="-1.18022329598584" y3="0.0" z3="0.0"/>
+      <cml:atom id="a3" elementType="C" x3="0.0" y3="0.0" z3="0.0"/>
+     </cml:atomArray>
+     <cml:bondArray>
+      <cml:bond atomRefs2="a1 a3"/>
+      <cml:bond atomRefs2="a2 a3"/>
+     </cml:bondArray>
+    </cml:molecule><!--
+    --><property name="Energy" method="RHF" principal="true" stateSymmetry="1" stateNumber="1"
+      value="-187.657814138388"/><!--
+    --><property name="Dipole moment" method="RHF" principal="true" stateSymmetry="1"
+      stateNumber="1" value="0.0 0.0 0.0"/><!--
+    -->
+    <time start="14:32:07" end="14:32:07" cpu="1.04" system="0.2" real="1.28"/>
+    <storage units="megabyte" memory="257.84" sf="8.5" df="169.97" eaf="40.33" ga="0.0"/>
+   </jobstep>
+   <jobstep command="MP2" commandset="CCSD">
+    <!--
+    --><property name="energy" method="Reference" stateSymmetry="1" stateNumber="1"
+      value="-187.657814138388"/>
+       <property name="singlet pair energy" method="MP2" stateSymmetry="1" stateNumber="1"
+      value="-0.296927641502551"/>
+       <property name="triplet pair energy" method="MP2" stateSymmetry="1" stateNumber="1"
+      value="-0.214958572962983"/>
+       <property name="correlation energy" method="MP2" stateSymmetry="1" stateNumber="1"
+      value="-0.511886214465534"/>
+       <property name="total energy" method="MP2" principal="true" stateSymmetry="1"
+      stateNumber="1" value="-188.169700352853"/><!--
+    --><property name="Dipole moment" method="!MP2" principal="true" stateSymmetry="1"
+      stateNumber="1" value="0.0 0.0 0.0"/><!--
+    -->
+    <time start="14:32:07" end="14:32:08" cpu="0.14" system="0.02" real="0.15"/>
+    <storage units="megabyte" memory="257.84" sf="8.5" df="169.97" eaf="40.33" ga="0.0"/>
+   </jobstep>
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      20       16.95       500      610      700      900      950      970     1000      129      960     1100   
+                                          VAR    BASINP    GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS      S 
+                                         1400     1410     1200     1210     1080     1600     1650     1700     1380     5200   
+                                           T        V       H0       H01     AOSYM     SMH    MOLCAS    OPER     JKOP      MP2  
+
+              2      10        0.51       700     1000      520     2100     4100     4101     9001     5300     5400     5450   
+                                         GEOM     BASIS   MCVARS     RHF     CPHF     CPHF    DEN_MP2   HESS     FREQ     NMOD   
+
+ PROGRAMS   *        TOTAL      FREQ      OPTG       MP2        HF       INT
+ CPU TIMES  *        18.63     11.32      6.22      0.15      0.06      0.36
+ REAL TIME  *        23.71 SEC
+ DISK USED  *       210.30 MB      
+ SF USED    *         8.50 MB      
+ GA USED    *         0.00 MB       (max)       0.00 MB       (current)
+ **********************************************************************************************************************************
+   <time start="14:31:54" end="14:32:08" cpu="11.32" system="1.88" real="13.45"/>
+   <storage units="megabyte" memory="257.84" sf="8.5" df="169.97" eaf="40.33" ga="0.0"/>
+  </jobstep><!--
+
+ MP2/aug-cc-pVDZ energy=   -188.169700352853
+
+       OPTG(MP2)        MP2             HF-SCF  
+   -188.16970037   -187.98416318   -187.52816334
+ **********************************************************************************************************************************
+ Variable memory released
+  --><stm:metadataList>
+   <stm:metadata name="dc:date" content="2016-08-12T14:32:08-07:00"/>
+   <stm:metadata name="dc:creator" content="sstraight"/>
+   <stm:metadata name="cmlm:insilico" content="Molpro"/>
+  </stm:metadataList><!--
+  --><platform>
+   <version major="2015" minor="1" SHA="41aa48e1468dac041f2eaabdf410f3ce2ee7f8bf"
+     integer_bits="64" parallelism="mpp">
+    2015.1
+    <date year="2016" month="8" day="12" hour="14" minute="31" second="45">
+     2016-08-12T14:31:45
+    </date>
+   </version>
+   <licence id="vbabin"/>
+   <parallel processes="8" nodes="1" all_processes="8" openmp="1"/>
+   <machine hostname="" architecture="">
+     64 bit mpp version
+    <sysinfo name="cpu MHz" content="2668.000"/>
+    <sysinfo name="MemTotal" content="24737080 kB"/>
+    <sysinfo name="vendor_id" content="GenuineIntel"/>
+    <sysinfo name="cpu family" content="6"/>
+    <sysinfo name="model name" content="Intel(R) Xeon(R) CPU           X5650  @ 2.67GHz"/>
+    <sysinfo name="flags"
+      content="fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm pcid dca sse4_1 sse4_2 popcnt lahf_lm ida arat epb dtherm tpr_shadow vnmi flexpriority ept vpid"/>
+    <sysinfo name="MemTotal" content="24737080 kB"/>
+    <sysinfo name="cache size" content="12288 KB"/>
+    <sysinfo name="ncpu" content="24"/>
+   </machine>
+  </platform><!--
+  -->
+  <input>
+   <p> memory, 32,M </p>
+   <p> geomtyp=xyz </p>
+   <p> geometry={ </p>
+   <p> 3 </p>
+   <p> linear triatomic CO2 </p>
+   <p>  O   1.000000   0.0000000   0.000 </p>
+   <p>  O  -1.000000   0.0000000   0.000 </p>
+   <p>  C   0.000000   0.0000000   0.000 </p>
+   <p> } </p>
+   <p> basis </p>
+   <p> default=avdz </p>
+   <p> end </p>
+   <p> CHARGE = 0, SPIN = 0 </p>
+   <p> hf </p>
+   <p> mp2 </p>
+   <p> e_H2O_b3lyp_avqz = energy </p>
+   <p> optg;coord,3n </p>
+   <p> {frequencies </p>
+   <p> thermo,sym=c2v </p>
+   <p> print,thermo} </p>
+  </input>
+  <!--
+ --></job><!--
+--></molpro>

@@ -1,0 +1,96 @@
+SPARTAN STUDENT Quantum Mechanics Program:  (x86/Darwin)    build  6.115
+
+ WARNING: Desired Analytical derivatives not available.
+
+
+Job type: Frequency calculation.
+Method: RMP2(FC)
+Basis set: 6-31G(D)
+Number of shells: 16
+Number of basis functions: 60
+Charge :     -1 
+Multiplicity: 1
+
+SCF model:
+ A restricted Hartree-Fock SCF calculation will be
+ performed using Pulay DIIS + Geometric Direct Minimization
+
+ SCF total energy:    -278.5235327 hartrees
+
+Correlation model:
+ An MP2 calculation will be performed
+ MP2 total energy:    -279.2648745 hartrees
+ SCF total energy:    -278.5235601 hartrees
+ MP2 total energy:    -278.5235601 hartrees
+ MP2 total energy:    -279.2652770 hartrees
+ SCF total energy:    -278.5235113 hartrees
+ MP2 total energy:    -278.5235113 hartrees
+ MP2 total energy:    -279.2644876 hartrees
+ SCF total energy:    -278.5237923 hartrees
+ MP2 total energy:    -278.5237923 hartrees
+ MP2 total energy:    -279.2649040 hartrees
+ SCF total energy:    -278.5232715 hartrees
+ MP2 total energy:    -278.5232715 hartrees
+ MP2 total energy:    -279.2648449 hartrees
+ SCF total energy:    -278.5235299 hartrees
+ MP2 total energy:    -278.5235299 hartrees
+ MP2 total energy:    -279.2648834 hartrees
+ SCF total energy:    -278.5240921 hartrees
+ MP2 total energy:    -278.5240921 hartrees
+ MP2 total energy:    -279.2651188 hartrees
+ SCF total energy:    -278.5229741 hartrees
+ MP2 total energy:    -278.5229741 hartrees
+ MP2 total energy:    -279.2646361 hartrees
+ SCF total energy:    -278.5240231 hartrees
+ MP2 total energy:    -278.5240231 hartrees
+ MP2 total energy:    -279.2652317 hartrees
+ SCF total energy:    -278.5230421 hartrees
+ MP2 total energy:    -278.5230421 hartrees
+ MP2 total energy:    -279.2645261 hartrees
+ SCF total energy:    -278.5235328 hartrees
+ MP2 total energy:    -278.5235328 hartrees
+ MP2 total energy:    -279.2648752 hartrees
+ SCF total energy:    -278.5609559 hartrees
+ MP2 total energy:    -278.5609559 hartrees
+ MP2 total energy: 788647880386373.6250000 hartrees
+ SCF total energy:    -278.5609031 hartrees
+ MP2 total energy:    -278.5609031 hartrees
+ MP2 total energy:    -279.2733683 hartrees
+ SCF total energy:    -278.5608789 hartrees
+ MP2 total energy:    -278.5608789 hartrees
+ MP2 total energy:    -279.2732893 hartrees
+ SCF total energy:    -278.5609807 hartrees
+ MP2 total energy:    -278.5609807 hartrees
+ MP2 total energy:    -279.2733745 hartrees
+ SCF total energy:    -278.5609303 hartrees
+ MP2 total energy:    -278.5609303 hartrees
+ MP2 total energy:    -279.2733328 hartrees
+ SCF total energy:    -278.5610239 hartrees
+ MP2 total energy:    -278.5610239 hartrees
+ MP2 total energy:    -279.2733497 hartrees
+ SCF total energy:    -278.5608353 hartrees
+ MP2 total energy:    -278.5608353 hartrees
+ MP2 total energy:    -279.2733133 hartrees
+ SCF total energy:    -278.5610162 hartrees
+ MP2 total energy:    -278.5610162 hartrees
+ MP2 total energy:    -279.2733504 hartrees
+ SCF total energy:    -278.5608430 hartrees
+ MP2 total energy:    -278.5608430 hartrees
+ MP2 total energy:    -279.2733130 hartrees
+ SCF total energy:    -278.5609301 hartrees
+ MP2 total energy:    -278.5609301 hartrees
+ MP2 total energy:    -279.2733325 hartrees
+
+
+-------
+
+ Error Occurred: OPTIMIZE fatal error (149)
+See verbose output for more information
+
+
+  Reason for exit: OPTIMIZE fatal error (149) 
+  Quantum Calculation CPU Time :      2:14.37
+  Quantum Calculation Wall Time:      2:34.94
+
+
+RC=3

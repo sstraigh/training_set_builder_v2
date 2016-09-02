@@ -1,0 +1,18 @@
+SPARTAN STUDENT Quantum Mechanics Program:  (x86/Darwin)    build  6.115
+
+ WARNING: Desired Analytical derivatives not available.
+
+
+
+-------
+
+ Error Occurred: Cn slipped through
+See verbose output for more information
+
+
+  Reason for exit: Cn slipped through 
+  Quantum Calculation CPU Time :          .05
+  Quantum Calculation Wall Time:         1.38
+
+
+RC=3
